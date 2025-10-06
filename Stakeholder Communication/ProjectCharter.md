@@ -1,5 +1,5 @@
 
-# P2 Project Charter
+# EasyTime Project Charter
 
 
 ## 1. Identification:
