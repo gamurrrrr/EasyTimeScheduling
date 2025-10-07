@@ -5,9 +5,13 @@
 ## 1. Identification:
 
 **Project Name**: EasyTime, a business scheduling web application
+
 **Current Version Charter Date**: 19 September 2025
+
 **Sponsor**: UBCO, Dr Patricia Lasserre
+
 **Project Manager**: Tanhab Hossain Sarkar (TA Lab 03)
+
 **Development Team**: Gamuchirai Mhere, Spencer Stephen, Benedict Astan, Serena Chen
 
 
@@ -18,19 +22,19 @@ Our project is a scheduling app for small businesses that will simplify the sche
 ## 3. Project Purpose
 The purpose of this project is to develop a comprehensive staff scheduling and time-tracking web application that directly addresses the needs of small businesses.
 
-Develop a staff scheduling and clock-in/out web app for small local businesses: The core objective is to create a web-based platform that replaces manual, paper-based systems. This provides a centralized and accessible solution for all scheduling and time-tracking needs.
+- Develop a staff scheduling and clock-in/out web app for small local businesses: The core objective is to create a web-based platform that replaces manual, paper-based systems. This provides a centralized and accessible solution for all scheduling and time-tracking needs.
 
-Simplify schedule creation for employers and managers: The app will feature an intuitive interface that allows managers to quickly build, adjust, and distribute work schedules. This will drastically reduce the time and effort currently spent on manual scheduling.
+- Simplify schedule creation for employers and managers: The app will feature an intuitive interface that allows managers to quickly build, adjust, and distribute work schedules. This will drastically reduce the time and effort currently spent on manual scheduling.
 
-Provide reliable scheduling with shift reminders and clock-in tracking: The system will automatically notify employees of their upcoming shifts, reducing missed shifts and improving punctuality. The integrated clock-in/out feature will accurately track employee hours.
+- Provide reliable scheduling with shift reminders and clock-in tracking: The system will automatically notify employees of their upcoming shifts, reducing missed shifts and improving punctuality. The integrated clock-in/out feature will accurately track employee hours.
 
-Reduce scheduling conflicts and missed shifts: By allowing managers to easily view employee availability and providing automated reminders, the app will minimize scheduling errors and communication breakdowns that lead to conflicts.
+- Reduce scheduling conflicts and missed shifts: By allowing managers to easily view employee availability and providing automated reminders, the app will minimize scheduling errors and communication breakdowns that lead to conflicts.
 
-Give employers and employees a simple, direct line of communication: The app will include a basic messaging feature that facilitates quick communication between managers and their teams.
+- Give employers and employees a simple, direct line of communication: The app will include a basic messaging feature that facilitates quick communication between managers and their teams.
 
-Allow employees to update availability as needed: Employees will have the ability to submit their availability preferences directly through the app, giving managers the real-time information they need to create fair and accurate schedules.
+- Allow employees to update availability as needed: Employees will have the ability to submit their availability preferences directly through the app, giving managers the real-time information they need to create fair and accurate schedules.
 
-Provide immediate payroll estimates: By automatically calculating total hours worked based on clock-in/out data, the app will generate a real-time summary of hours for each employee, simplifying the payroll process for managers.
+- Provide immediate payroll estimates: By automatically calculating total hours worked based on clock-in/out data, the app will generate a real-time summary of hours for each employee, simplifying the payroll process for managers.
 
 
 ## 4. Business Needs or Opportunities
@@ -113,66 +117,51 @@ The current process for managing employee schedules in many small businesses is 
 
 ## 9. Major Deliverables
 
-Completion and upload of the basic functional website. This will contain a calendar view as well as a way to add shifts for employees
-
-Completion and integration of user authentication into the website. This will allow shifts to be added for employees.
-
-Full integration of all multi-user features, such as shift change requests and the chat page.
-
-Fully completed site with finished design by the first week of December.
-
-Documentation page for users or FAQ/help page
+- Completion and upload of the basic functional website. This will contain a calendar view as well as a way to add shifts for employees
+- Completion and integration of user authentication into the website. This will allow shifts to be added for employees.
+- Full integration of all multi-user features, such as shift change requests and the chat page.
+- Fully completed site with finished design by the first week of December.
+- Documentation page for users or FAQ/help page
 
 
 ## 10. Assumptions
 
-The business has reliable internet service.
-
-Employees have basic computer knowledge
-
-The business has modern computers and hardware
-
-The business works on a shift-based system instead of a salaried system.
+- The business has reliable internet service.
+- Employees have basic computer knowledge
+- The business has modern computers and hardware
+- The business works on a shift-based system instead of a salaried system.
 
 
 ## 11. Constraints
 
-Only 4 developers to cover all aspects of the application
-
-Time constraint: Only 8 weeks to provide a working product
-
-The application must be web-based, not downloadable
-
-Limited data available; all data is fabricated for demonstration
-
-Limited budget - $3400 total
+- Only 4 developers to cover all aspects of the application
+- Time constraint: Only 8 weeks to provide a working product
+- The application must be web-based, not downloadable
+- Limited data available; all data is fabricated for demonstration
+- Limited budget - $3400 total
 
 
 ## 12. Logistics
 
-Developer salary: $20 per hour
-
-Hours per week: 3-5 hours, 2 meetings per week (in-lab and online)
-
-Budget per week: $20 * 5 hours/week * 4 employees = $400/week
-
-Software and equipment costs - $200 total (includes web hosting, software licenses, and internet service)
-
-Total budget: $400 * 8 weeks + $200  = $3400 total
+- Developer salary: $20 per hour
+- Hours per week: 3-5 hours, 2 meetings per week (in-lab and online)
+- Budget per week: $20 * 5 hours/week * 4 employees = $400/week
+- Software and equipment costs - $200 total (includes web hosting, software licenses, and internet service)
+- Total budget: $400 * 8 weeks + $200  = $3400 total
 
 
 ## 13. Tech Stack
-Frontend: HTML/CSS, potentially using Tailwind CSS
+**Frontend**: HTML/CSS, potentially using Tailwind CSS
 
-Backend: TypeScript
+**Backend**: TypeScript
 
-Database: MySQL
+**Database**: MySQL
 
-Tools:
+**Tools**:
 - Postman: APIs
 - Figma: front-end prototyping
 
-Testing requirements: 
+**Testing requirements**: 
 - Unit testing
 - Integration testing
 - Acceptance testing
@@ -180,7 +169,7 @@ Testing requirements:
 
 ## 14. Project Charter Acceptance
 
-Dr. Patricia Lasserre :
+Dr. Patricia Lasserre:
 
 Tanhab Hossain Sarker: 
 
