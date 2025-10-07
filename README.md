@@ -1,5 +1,7 @@
 # EasyTime
 
+![ChatGPT Image Oct 6, 2025, 05_19_51 PM](https://github.ubc.ca/COSC-O-305-101-O2025W1/L03_Google/assets/4449/c26e47ed-8088-4a8c-8413-7f9507a859c5)
+
 EasyTime is an application for small businesses that will simplify the scheduling process for both employers and employees. Smaller companies often still use physical schedules and timesheets, which can easily lead to mistakes or inefficiencies. Switching to this web app will make sure that all different aspects of schedule management are condensed in one easy-to-use place.
 
 <details>
