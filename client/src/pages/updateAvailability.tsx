@@ -18,7 +18,6 @@ export default function UpdateAvailability() {
     "Sunday",
   ];
 
-  // store data for all days
   const [availability, setAvailability] = useState<Availability[]>(
     days.map((day) => ({
       day,
@@ -28,7 +27,6 @@ export default function UpdateAvailability() {
     }))
   );
 
-  // handle changes
   const handleChange = (
     index: number,
     field: keyof Availability,
@@ -45,10 +43,16 @@ export default function UpdateAvailability() {
     alert("Availability saved! Check console for details 😎");
   };
 
+  const green = "#47a868";
+  const border = "#d4d4d4";
+
   return (
     <div
       style={{
-        minHeight: "100vh",
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        flexDirection: "column",
         backgroundColor: "#f8f9f9",
         color: "#0b0b0c",
         fontFamily:
@@ -58,129 +62,164 @@ export default function UpdateAvailability() {
       {/* Header */}
       <header
         style={{
-          backgroundColor: "white",
-          borderBottom: "1px solid #d4d4d4",
+          backgroundColor: "#fff",
+          borderBottom: `1px solid ${border}`,
           padding: "14px 20px",
           fontWeight: 600,
           fontSize: "18px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          flexShrink: 0,
         }}
       >
-        ⏱️ EasyTime
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          ⏱️ EasyTime
+          <button
+            onClick={() => alert("Back to dashboard")}
+            style={{
+              backgroundColor: green,
+              color: "#fff",
+              border: "none",
+              borderRadius: "8px",
+              padding: "6px 10px",
+              fontSize: "14px",
+              fontWeight: 600,
+              cursor: "pointer",
+            }}
+            onMouseOver={(e) =>
+              (e.currentTarget.style.backgroundColor = "#3b8e59")
+            }
+            onMouseOut={(e) =>
+              (e.currentTarget.style.backgroundColor = green)
+            }
+          >
+            ← Back to Dashboard
+          </button>
+        </div>
         <div>Availability Update</div>
       </header>
 
-      {/* Main */}
+      {/* Main Content */}
       <main
         style={{
-          maxWidth: "700px",
-          margin: "40px auto",
-          backgroundColor: "white",
-          border: "1px solid #d4d4d4",
-          borderRadius: "16px",
-          padding: "24px",
-          boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+          flex: 1,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "20px",
+          overflowY: "auto",
         }}
       >
-        <h1
+        <div
           style={{
-            marginTop: 0,
-            color: "#47a868",
-            fontSize: "22px",
+            width: "100%",
+            maxWidth: "700px",
+            backgroundColor: "#fff",
+            border: `1px solid ${border}`,
+            borderRadius: "16px",
+            padding: "24px",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
           }}
         >
-          Update Your Weekly Availability
-        </h1>
-
-        <p
-          style={{
-            fontSize: "14px",
-            color: "#555",
-            marginBottom: "20px",
-          }}
-        >
-          Select the times you’re available to work for each day of the week.
-        </p>
-
-        <form onSubmit={handleSubmit}>
-          <table
+          <h1
             style={{
-              width: "100%",
-              borderCollapse: "collapse",
-              marginTop: "20px",
-              fontSize: "14px",
+              marginTop: 0,
+              color: green,
+              fontSize: "22px",
             }}
           >
-            <thead>
-              <tr>
-                <th style={thStyle}>Day</th>
-                <th style={thStyle}>Available From</th>
-                <th style={thStyle}>Available To</th>
-                <th style={thStyle}>Available?</th>
-              </tr>
-            </thead>
+            Update Your Weekly Availability
+          </h1>
 
-            <tbody>
-              {availability.map((item, index) => (
-                <tr key={item.day}>
-                  <td style={tdStyle}>{item.day}</td>
-                  <td style={tdStyle}>
-                    <input
-                      type="time"
-                      value={item.from}
-                      onChange={(e) =>
-                        handleChange(index, "from", e.target.value)
-                      }
-                      style={inputStyle}
-                      disabled={!item.available}
-                    />
-                  </td>
-                  <td style={tdStyle}>
-                    <input
-                      type="time"
-                      value={item.to}
-                      onChange={(e) =>
-                        handleChange(index, "to", e.target.value)
-                      }
-                      style={inputStyle}
-                      disabled={!item.available}
-                    />
-                  </td>
-                  <td style={tdStyle}>
-                    <input
-                      type="checkbox"
-                      checked={item.available}
-                      onChange={(e) =>
-                        handleChange(index, "available", e.target.checked)
-                      }
-                    />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-
-          <button
-            type="submit"
-            style={buttonStyle}
-            onMouseOver={(e) =>
-              (e.currentTarget.style.backgroundColor = "#27985f")
-            }
-            onMouseOut={(e) =>
-              (e.currentTarget.style.backgroundColor = "#47a868")
-            }
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#555",
+              marginBottom: "20px",
+            }}
           >
-            Save Availability
-          </button>
-        </form>
+            Select the times you’re available to work for each day of the week.
+          </p>
+
+          <form onSubmit={handleSubmit}>
+            <table
+              style={{
+                width: "100%",
+                borderCollapse: "collapse",
+                marginTop: "20px",
+                fontSize: "14px",
+              }}
+            >
+              <thead>
+                <tr>
+                  <th style={thStyle}>Day</th>
+                  <th style={thStyle}>Available From</th>
+                  <th style={thStyle}>Available To</th>
+                  <th style={thStyle}>Available?</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {availability.map((item, index) => (
+                  <tr key={item.day}>
+                    <td style={tdStyle}>{item.day}</td>
+                    <td style={tdStyle}>
+                      <input
+                        type="time"
+                        value={item.from}
+                        onChange={(e) =>
+                          handleChange(index, "from", e.target.value)
+                        }
+                        style={inputStyle}
+                        disabled={!item.available}
+                      />
+                    </td>
+                    <td style={tdStyle}>
+                      <input
+                        type="time"
+                        value={item.to}
+                        onChange={(e) =>
+                          handleChange(index, "to", e.target.value)
+                        }
+                        style={inputStyle}
+                        disabled={!item.available}
+                      />
+                    </td>
+                    <td style={tdStyle}>
+                      <input
+                        type="checkbox"
+                        checked={item.available}
+                        onChange={(e) =>
+                          handleChange(index, "available", e.target.checked)
+                        }
+                      />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
+            <button
+              type="submit"
+              style={buttonStyle}
+              onMouseOver={(e) =>
+                (e.currentTarget.style.backgroundColor = "#3b8e59")
+              }
+              onMouseOut={(e) =>
+                (e.currentTarget.style.backgroundColor = green)
+              }
+            >
+              Save Availability
+            </button>
+          </form>
+        </div>
       </main>
     </div>
   );
 }
 
-// style objects
+// Table Header / Cell Styles
 const thStyle: React.CSSProperties = {
   border: "1px solid #d4d4d4",
   padding: "8px",

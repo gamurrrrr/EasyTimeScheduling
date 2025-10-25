@@ -35,10 +35,10 @@
 // export default App
 // old code commented out above 👆
 
-import Login from "./pages/Login";
+import Calendar from "./pages/calendar";
 
 function App() {
-  return <Login />;
+  return <Calendar/>;
 }
 
 export default App;
