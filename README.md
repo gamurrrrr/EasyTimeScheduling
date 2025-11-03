@@ -48,18 +48,24 @@ EasyTime is an application for small businesses that will simplify the schedulin
   <summary>Frontend:</summary>
   
 - HTML/CSS
+- Vite
+- React
+- TypeScript
 </details>
 
 <details>
 <summary>Backend:</summary>
   
 - TypeScript
+- Express
+- Prisma
 </details>
 
 <details>
 <summary>Database:</summary>
   
 - MySQL
+- PostgreSQL
 </details>
 
 <details>
