@@ -158,7 +158,7 @@ export default function TeamChat() {
                   color: msg.sender === "user" ? "#f0f0f0" : "#555",
                 }}
               >
-                {msg.sender === "user" ? "You" : "Manager"} • {msg.time}
+                {msg.sender === "user" ? "You" : "Manager Serena"} • {msg.time}
               </small>
             </div>
           ))}
