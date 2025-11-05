@@ -20,6 +20,11 @@ app.get("/health", async (_req, res) => {
   res.send("ok");
 });
 
+app.get("/users", async (_req, res) => {
+  const users = await prisma.user.findMany();
+  res.json(users);
+});
+
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });

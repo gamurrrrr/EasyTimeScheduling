@@ -12,6 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "prisma": {
+    "seed": "node --loader ts-node/esm --enable-source-maps prisma/seed.ts"
+  },
   "dependencies": {
     "@prisma/client": "^6.18.0",
     "cors": "^2.8.5",
