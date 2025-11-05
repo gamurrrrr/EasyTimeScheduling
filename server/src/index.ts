@@ -20,6 +20,7 @@ app.get("/health", async (_req, res) => {
   res.send("ok");
 });
 
+// Temporary dev endpoint so the team can see seeded users quickly.
 app.get("/users", async (_req, res) => {
   const users = await prisma.user.findMany();
   res.json(users);
