@@ -1,0 +1,87 @@
+:root {
+  /* colors */
+  --brand-blue: #1e2e3d;
+  --brand-green: #47a868;
+  --brand-white: #ffffff;
+  --brand-gray: #f9fafb;
+
+  /* Font */
+  --font-main: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  /* background*/
+  background: linear-gradient(135deg, var(--brand-white) 15%, var(--brand-green) 100%);
+  font-family: var(--font-main);
+  color: var(--brand-blue);
+
+  /* Smooth text */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Global reset */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--brand-blue);
+  background: inherit;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: var(--brand-blue);
+  margin: 0;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: var(--brand-green);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: var(--font-main);
+  background-color: var(--brand-green);
+  color: var(--brand-white);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #3b9258; /* darker green hover */
+}
+button:focus {
+  outline: 3px solid rgba(71, 168, 104, 0.4);
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: var(--font-main);
+  box-sizing: border-box;
+}
+input:focus {
+  border-color: var(--brand-green);
+  box-shadow: 0 0 4px rgba(71, 168, 104, 0.3);
+  outline: none;
+}
+
+
+
