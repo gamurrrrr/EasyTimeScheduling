@@ -5,15 +5,22 @@
 
 EasyTime is an application for small businesses that will simplify the scheduling process for both employers and employees. Smaller companies often still use physical schedules and timesheets, which can easily lead to mistakes or inefficiencies. Switching to this web app will make sure that all different aspects of schedule management are condensed in one easy-to-use place.
 
-Demo Video: https://www.youtube.com/watch?v=kJcqeUBKRDk
+## EasyTime Demo Video
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=kJcqeUBKRDk">
+    <img src="https://img.youtube.com/vi/kJcqeUBKRDk/0.jpg" width="70%" />
+  </a>
+</p>
+
 
 <details>
 <summary>Development Team (L03_Google)</summary>
   
-- Gamuchirai Mhere
-- Spencer Stephen
-- Benedict Astan
-- Serena Chen
+- Gamuchirai Mhere - Frontend Development using React VITE, developed the shift swap, calendar, request-time-off, team and individual chats, and payroll pages for both employee and manager roles
+- Spencer Stephen - Backend Development and Integration
+- Benedict Astan - Backend Logic Development
+- Serena Chen - Frontend Development using React VITE, developed the dashboard, profile and announcements pages for both employee and manager roles
 </details>
 
 ## Project Scope
