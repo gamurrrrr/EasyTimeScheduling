@@ -1,5 +1,6 @@
 # EasyTime
 
+![EasyTime Demo](easy.png)
 
 
 EasyTime is an application for small businesses that will simplify the scheduling process for both employers and employees. Smaller companies often still use physical schedules and timesheets, which can easily lead to mistakes or inefficiencies. Switching to this web app will make sure that all different aspects of schedule management are condensed in one easy-to-use place.
