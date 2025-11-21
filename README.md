@@ -85,4 +85,4 @@ EasyTime is an application for small businesses that will simplify the schedulin
 </details>
 
 ## [Gantt Chart](https://app.smartsheet.com/sheets/8xCvwC8RcQvpr8jG5xX6Xmp4g8QqwR5j8RcwwCP1)
-![P3_Project Outline](https://github.ubc.ca/COSC-O-305-101-O2025W1/L03_Google/assets/4454/f7d232f0-9c98-41a8-9ae5-4603d35d3637)
+![P3_Project Outline](gantt.png)
